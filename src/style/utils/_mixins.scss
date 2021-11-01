@@ -1,0 +1,30 @@
+@mixin  flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@function rem($pixels, $context: 16px) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+	@return $pixels / $context * 1rem;
+}
+
+@mixin fonts-M ($size: 16px, $bold: 700) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $bold;
+    font-size: $size;
+}
+@mixin fonts-L ($size: 16px, $bold: 700) {
+    font-family: 'Lato', sans-serif;
+    font-weight: $bold;
+    font-size: $size;
+}

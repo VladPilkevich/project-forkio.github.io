@@ -1,0 +1,142 @@
+
+.about{
+    background-color: #F4F4F4; 
+    display: flex;
+&__title-text{
+    @include fonts-M(42px);
+    color: #8D81AC;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 66px;
+    display: none;
+    }
+&__second-title-text{
+    margin-top: 94px;
+    @include fonts-M(48px);
+    color: #8D81AC;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+&__wrapper{
+    padding-top: 102px;
+    padding-left: 15px;
+    &__items{
+        width: 511px;
+        display: flex;
+        margin-bottom: 35px;
+    &__div{
+        margin-left: 24px;
+    }
+    &__text{
+        @include fonts-M(16px);
+        font-weight: normal;
+        margin-bottom: 17px;
+    }
+    &__big-text{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #848E97;
+    }
+    &__img{
+        height: rem(64px);
+    }
+    &__image{
+        height: rem(80px);
+    }
+    &__second-image{
+        height: 84px;
+    }
+    &__second-img{
+        margin-top: rem(16px);
+        height: rem(71px);
+    }
+    &__margin-left{
+        margin-left: rem(46px);
+    }
+    &__second-margin-left{
+        margin-left: 77px;
+    }
+    &__third-margin-left{
+        margin-left: 67px;
+    }
+    }
+}
+&__title-img{
+    width: 100%;
+}
+}
+@media (min-width: 1200px) {
+    .about{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width:992px) {
+    .about{
+        background-color: #fff;
+        display: block;
+    &__second-title-text{
+        display:none;
+    }
+    &__title-text{
+        font-size: rem(42px);
+        display:block;
+    }
+    &__title-img{
+        right: 0;
+    }
+    &__wrapper__items{
+        width:auto;
+        padding: 10px;
+    }
+}
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .about{
+        background-color: #FFFFFF;
+        display: block;
+        margin-bottom: -400px;
+        &__title-text{
+            display: block;
+        }
+        &__second-title-text{
+            display: none;
+            font-size: rem(32px);
+        }
+        &__title-img{
+            // position: absolute;
+            right: 0;
+            // width: 332px;
+            height: 381px;
+        }
+        &__wrapper__items{
+            width: auto;
+            display: block;
+            &__img{
+                @include center;
+            }
+            &__image{
+                @include center;
+            }
+            &__second-image{
+                @include center;
+            }
+            &__second-img{
+                @include center;
+            }
+            &__div{
+                text-align: center;
+                width: auto;
+                margin: 0;
+                padding: 20px;
+            }
+        }
+    }
+}
+li{
+    list-style-type: none;
+}

@@ -1,0 +1,123 @@
+@media(min-width: 1200px) {
+    .main{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+.main{
+    &__download-button{
+        width: 390px;
+        height: 62px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0) translateY(-33px);
+        border-radius: 40px;
+        border: 2px solid #8D81AC;
+        background: #8D81AC;
+        color: white;
+        @include fonts-M(21px);
+        font-weight: bold;
+       /*  font-size: rem(21); */
+    }
+    &__download-button:hover{
+        background-color: #ffffff;
+        color: #8D81AC;
+    }
+    &__mini-text{
+        @include fonts-M(14px);
+        font-style: normal;
+        font-weight: normal;
+        line-height: 0;
+        text-align: center;
+    }
+    &__second-mini-text{
+        @include fonts-M(54px);
+        font-weight: bold;
+        text-align: center;
+        margin-top: 66px;
+        color: #635C73;
+    }
+    &__big-text{
+        @include fonts-L(21px);
+        font-weight: normal;
+        text-align: center;
+        margin-top: 35px;
+    }
+    &__buttons{
+        display:flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 98px;
+    }
+    &__bdiv {
+        display: flex;
+    }
+    &__buttons-item{
+        @include fonts-M;
+        border: 1px solid;
+        border-radius: 6px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 3px 12px;
+        border-color: #1b1f2426;
+        background-color: #f6f8fa;
+        margin-left: 15px;
+    }
+    &__mini-numbers{
+        border: 1px solid;
+        float: left;
+        padding: 3px 12px;
+        border-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-color: #1b1f2426;
+        font-weight: bold;
+    }
+    &__margin-left{
+        margin-left: 5px;
+    }
+    &__radius{
+        border-radius: 6px;
+    }
+}
+          
+@media (min-width: 481px) and (max-width: 992px){
+    .main{
+        &__second-mini-text{
+            font-size: rem(41px);
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .main{
+        &__second-mini-text{
+            font-size: rem(26px);
+        }
+        &__big-text{
+            font-size: rem(14px);
+        }
+        &__buttons{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__margin-top{
+            margin-top: 20px;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width:480px) {
+    .main{
+        &__download-button{
+            transform: translate(-50%,0) translateY(-32px);
+            width: 290px;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width:335px) {
+    .main{
+        &__download-button{
+            transform: translate(-50%,0) translateY(-73px);
+            width: 290px;
+        }
+    }
+}
